@@ -1,9 +1,26 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Number go up 🚀
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+      <div class="ion-padding">
+          <ion-item>
+              <ion-label>Currect price</ion-label>
+              <ion-badge slot="end">$ {{ btcdata }}</ion-badge>
+            </ion-item>
+            
+          <ion-card>
+              <ion-card-header>
+                Line Chart
+              </ion-card-header>
+              <ion-card-content>
+                <canvas #lineCanvas></canvas>
+              </ion-card-content>
+            </ion-card>                        
 
-<ion-content></ion-content>
+      </div>
+    </ion-content>
